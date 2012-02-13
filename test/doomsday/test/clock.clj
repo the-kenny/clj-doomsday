@@ -14,5 +14,5 @@
   (timed (minutes-to-midnight)) => pos?  ;Uncached, slow (> 1 millisecond)
   (timed (minutes-to-midnight)) => 0     ;Cached, fast
   (minutes-to-midnight)         => integer?
-  (minutes-to-midnight)         => (roughly 5 1)
+  (minutes-to-midnight)         => (roughly 5 5)
   )
