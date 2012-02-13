@@ -1,8 +1,5 @@
 (ns doomsday.clock
   (:require [clj-http.client :as client]
-            [pl.danieljanus.tagsoup :as soup]
-            [clojure.xml :as xml]
-            [clojure.zip :as zip]
             [clojure.core.memoize :as memo]))
 
 (def clock-url "http://www.thebulletin.org/content/doomsday-clock/overview")
