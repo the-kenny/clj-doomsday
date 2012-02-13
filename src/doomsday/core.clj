@@ -1,5 +1,7 @@
 (ns doomsday.core
-  (:require [doomsday.clock :as clock]))
+  (:use [doomsday.clock :only [minutes-to-midnight]]
+        [doomsday.lhc :only [has-the-lhc-destroyed-the-world-yet?]]))
 
 (defn are-we-dead-yet? []
-  (= 0 (clock/minutes-to-midnight)))
+  (or (= 0 (minutes-to-midnight))
+      (has-the-lhc-destroyed-the-world-yet?)))

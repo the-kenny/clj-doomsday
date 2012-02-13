@@ -8,11 +8,12 @@ clj-doomsday is a Clojure library to check if humanity has finally destroyed its
 clj-doomsday currently checks the following indicators for the end of humanity:
 
 * Doomsday Clock: https://en.wikipedia.org/wiki/Doomsday_Clock
+* LHC: http://hasthelargehadroncolliderdestroyedtheworldyet.com/
 
 ### Planned
 
-* http://hasthelargehadroncolliderdestroyedtheworldyet.com/
-
+* Arduinos with a Geiger Counter etc.?
+* UVB-76 (https://en.wikipedia.org/wiki/UVB-76)
 
 ## Usage
 
