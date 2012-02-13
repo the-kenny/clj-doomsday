@@ -19,6 +19,8 @@ clj-doomsday currently checks the following indicators for the end of humanity:
 
 FIXME: write
 
+[![Continuous Integration status](https://secure.travis-ci.org/the-kenny/clj-doomsday.png)](http://travis-ci.org/the-kenny/clj-doomsday)
+
 ## License
 
 Copyright (C) 2012 Moritz Ulrich
