@@ -4,8 +4,9 @@
   (require [doomsday.clock :as clock]))
 
 (fact "about are-we-dead-yet?"
-  (are-we-dead-yet?) => false
+  (are-we-dead-yet?)                    => (instance? java.lang.Boolean)
+  (are-we-dead-yet?)                    => false
   (provided (clock/minutes-to-midnight) => 5)
 
-  (are-we-dead-yet?) => true
+  (are-we-dead-yet?)                    => true
   (provided (clock/minutes-to-midnight) => 0))
