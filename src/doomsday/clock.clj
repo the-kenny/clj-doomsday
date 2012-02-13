@@ -24,6 +24,3 @@
   (-> (load-page) extract-minutes))
 
 (def minutes-to-midnight (memo/memo-ttl minutes-to-midnight-uncached ttl-milliseconds))
-
-(defn are-we-dead-yet? []
-  (= 0 (minutes-to-midnight)))
