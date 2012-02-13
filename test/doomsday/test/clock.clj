@@ -8,7 +8,7 @@
      (- (System/currentTimeMillis) t#)))
 
 (fact "about timed"
-  (timed (Thread/sleep 1000)) => (roughly 1000))
+  (timed (Thread/sleep 1000)) => (roughly 1000 10))
 
 (fact "about minutes-to-midnight"
   (timed (minutes-to-midnight)) => pos?  ;Uncached, slow (> 1 millisecond)
