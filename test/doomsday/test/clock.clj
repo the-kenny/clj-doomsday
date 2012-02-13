@@ -16,3 +16,10 @@
   (minutes-to-midnight)         => integer?
   (minutes-to-midnight)         => (roughly 5 1)
   )
+
+(fact "about are-we-dead-yet?"
+  (are-we-dead-yet?) => false
+  (provided (minutes-to-midnight) => 5)
+
+  (are-we-dead-yet?) => true
+  (provided (minutes-to-midnight) => 0))
