@@ -1,4 +1,4 @@
-(ns clj-doomsday.clock
+(ns doomsday.clock
   (:require [clj-http.client :as client]
             [pl.danieljanus.tagsoup :as soup]
             [clojure.xml :as xml]
@@ -20,6 +20,7 @@
                          12             ;1/2 Day
                          ))
 
-(defn minutes-to-midnight []
+(defn minutes-to-midnight-uncached []
   (-> (load-page) extract-minutes))
-(alter-var-root #'minutes-to-midnight memo/memo-ttl ttl-milliseconds)
+
+(def minutes-to-midnight (memo/memo-ttl minutes-to-midnight-uncached ttl-milliseconds))

@@ -5,4 +5,6 @@
                  [org.clojure/data.json "0.1.1"]
                  [clj-tagsoup "0.2.6" :exclusions [org.clojure/clojure
                                                    swank-clojure/swank-clojure]]
-                 [org.clojure/core.memoize "0.5.1"]])
+                 [org.clojure/core.memoize "0.5.1"]]
+  :dev-dependencies [[midje "1.3.1"]
+                     [lein-midje "1.0.7"]])
